@@ -63,7 +63,8 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:test', function (req, res) {
-  res.send(createHtml(htmlContent[test]));
+  var value = req.params.test
+  res.send(createHtml(htmlContent[value]));
 });
 
 app.get('/ui/style.css', function (req, res) {
