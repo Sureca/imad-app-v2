@@ -28,19 +28,21 @@ function createHtml (input){
             
         <body>
             <div class="container">
-                <a href="/">Home</a>
-            </div>
-            <hr/>
-            <h3>
-                ${heading}
-            </h3>
-            <div>
-                ${date}
-            </div>
-            <div>
-                <p>
-                    ${content}
-                </p>
+                <div>
+                    <a href="/">Home</a>
+                </div>
+                <hr/>
+                <h3>
+                    ${heading}
+                </h3>
+                <div>
+                    ${date}
+                </div>
+                <div>
+                    <p>
+                        ${content}
+                    </p>
+                </div>
             </div>
         </body>
     </html>
