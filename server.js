@@ -6,13 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 var htmlContent = {
-    valueHtml1: {   
+    'valueHtml1': {   
         title : `One`,
         heading : `First app`,
         content : `This is the testing application`,
         date : `date`
     },
-    valueHtml2:{
+    'valueHtml2':{
         title : `Two`,
         heading : `Second app`,
         content : `This is the second testing application`,
