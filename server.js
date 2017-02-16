@@ -6,10 +6,18 @@ var app = express();
 app.use(morgan('combined'));
 
 var htmlContent = {
-    title : `Title`,
-    heading : `First app`,
-    content : `This is the testing application`,
-    date : `date`
+    valueHtml1: {   
+        title : `One`,
+        heading : `First app`,
+        content : `This is the testing application`,
+        date : `date`
+    },
+    valueHtml2:{
+        title : `Two`,
+        heading : `Second app`,
+        content : `This is the second testing application`,
+        date : `date`
+    }
 };
 
 function createHtml (input){
