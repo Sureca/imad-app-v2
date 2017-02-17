@@ -63,7 +63,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:test', function (req, res) {
-  var value = req.params.test
+  var value = req.params.test;
   res.send(createHtml(htmlContent[value]));
 });
 
