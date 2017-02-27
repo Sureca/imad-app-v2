@@ -87,7 +87,7 @@ app.get('/test-db',function(req,res){
     });
 });
 
-app.get('/articles/:test', function (req, res) {
+app.get('/article/:test', function (req, res) {
     //var value = req.params.test
     //res.send(createHtml(htmlContent[value]));
 
