@@ -52,7 +52,7 @@ function createHtml (input){
                     ${heading}
                 </h3>
                 <div>
-                    ${date}
+                    ${date.toDateString()}
                 </div>
                 <div>
                     <p>
