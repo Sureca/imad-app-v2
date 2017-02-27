@@ -91,7 +91,7 @@ app.get('/article/:test', function (req, res) {
     //var value = req.params.test
     //res.send(createHtml(htmlContent[value]));
 
-    pool.query("select * from test where name = '" + req.params.test +"'", function(err, result){
+    pool.query("select * from Articles where title = '" + req.params.test +"'", function(err, result){
         if(err){
             res.status(500).send(err.toString());
         }else{
