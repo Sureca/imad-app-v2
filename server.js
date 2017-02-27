@@ -74,6 +74,10 @@ app.get('/indexHTML', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'indexHTML.html'));
 });
 
+app.get('/styleCSS', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'styleCSS.css'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
