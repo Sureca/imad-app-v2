@@ -88,21 +88,21 @@ app.get('/test-db',function(req,res){
 });
 
 app.get('/articles/:test', function (req, res) {
-  //var value = req.params.test
-  //res.send(createHtml(htmlContent[value]));
+    //var value = req.params.test
+    //res.send(createHtml(htmlContent[value]));
 
-  pool.query("Select * from Articles where title = " + req.params.test, funtion(err, result) {
-      if(err){
-          res.status(500).send(err.toString());
-      }else{
-          if(result.rows.length === 0){
-              res.status(404).send("Article not found");
-          }else{
-              var articleData = result.rows[0];
-              res.send(createHtml(articleData));
-          }
-      }
-  });
+    pool.query("select * from articles where title = " + req.params.test, function(err, result){
+        if(err){
+            res.status(500).send(err.toString());
+        }else{
+            if(result.rows.length === 0){
+                res.status(404).send("Article not found");
+            }else{
+                var articleData = result.rows[0];
+                res.send(createHtml(articleData));
+            }
+        }
+    });
  // res.send(createHtml(htmlContent[value]));
 });
 
